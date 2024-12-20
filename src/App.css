@@ -1,0 +1,225 @@
+/* General App styling */
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8; /* Light background for a fresh look */
+  color: #333;
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #4CAF50;
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+  border-bottom: 4px solid #388E3C;
+}
+
+.App-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Header Styling */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #4CAF50;
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+  border-bottom: 4px solid #388E3C;
+  z-index: 100;
+}
+
+.header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header nav a {
+  margin: 0 20px;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #388E3C;
+  color: white;
+}
+
+/* Landing Page Styling */
+.landing-page {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+}
+
+.landing-page h1 {
+  font-size: 3.5rem;
+  color: #2c3e50;
+}
+
+.landing-page p {
+  font-size: 1.4rem;
+  color: #34495e;
+}
+
+.landing-page button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landing-page button:hover {
+  background-color: #388E3C;
+}
+
+/* Product Listing Styling */
+.product-listing-page {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.product {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product h4 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.product button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #388E3C;
+}
+
+/* Shopping Cart Page Styling */
+.shopping-cart-page {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  max-width: 50px;
+  height: auto;
+}
+
+.cart-item h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.cart-actions button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-actions button:hover {
+  background-color: #388E3C;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .product {
+    width: 48%;
+  }
+
+  .landing-page button {
+    padding: 10px 20px;
+  }
+
+  .product-listing-page, .shopping-cart-page {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header nav a {
+    font-size: 1rem;
+  }
+
+  .landing-page button {
+    padding: 8px 15px;
+  }
+}
