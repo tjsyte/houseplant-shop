@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Houseplant Shop Prototype
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Houseplant Shop**! This is a React-based e-commerce web application designed for buying various types of houseplants. The project uses Redux for state management, React Router for navigation, and basic styling for a fresh and pleasant user interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Landing Page**: Introduction to the store and a button to navigate to the product listing.
+- **Product Listing**: Displays different plant categories (Succulents, Indoor, Outdoor) and individual products with an option to add to the cart.
+- **Shopping Cart**: Allows users to view items in their cart, update the quantity, remove items, and see the total cost.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: JavaScript library for building user interfaces.
+- **Redux**: State management tool to handle the cart and other global state.
+- **React Router**: For navigation between pages (Landing Page, Product Listing, and Shopping Cart).
+- **CSS**: For styling the application with a nature-inspired, fresh design.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
 
-### `npm test`
+To get started with this project on your local machine, follow the steps below:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Make sure you have [Node.js](https://nodejs.org/en/) installed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/yourusername/houseplant-shop.git
+   cd houseplant-shop
+   ```
+2. Install the required dependencies:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
+### Run the Application
+To start the development server and run the app locally:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
+This will open the application in your default browser at http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Project Structure
+Here's an overview of the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+houseplant-shop/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── Header.js
+│   ├── pages/
+│   │   ├── LandingPage.js
+│   │   ├── ProductListingPage.js
+│   │   └── ShoppingCartPage.js
+│   ├── redux/
+│   │   └── actions.js
+│   │   └── reducers.js
+│   │   └── store.js
+│   ├── App.css
+│   └── App.js
+├── .gitignore
+├── package.json
+└── README.md
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
